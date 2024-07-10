@@ -201,25 +201,44 @@ section {
   filter: sepia(1) saturate(5) hue-rotate(80deg);
 }
 
-.heroes {
+.slider-window {
+  display: flex;
+  max-width: 1020px;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  margin-left: -360px;
+}
+
+.article {
   position: relative;
   display: flex;
   justify-content: space-around;
+  margin-right: 60px;
   width: 300px;
-  transition: .3s;
+  transition: .7s;
 }
 
-.heroes:hover {
-  box-shadow: 0 0 5px 0 #02160b;
+.article:hover {
+  filter: sepia(.4) saturate(2);
+  text-shadow: 0 0 7px #fff;
+  cursor: pointer;
 }
 
-.heroes h4 {
+.thinner {
+  margin-right: 0;
+  width: 0;
+}
+
+.article h4 {
   position: absolute;
   top: 250px;
   font-size: 22px;
 }
 
-.heroes span {
+.article span {
   position: absolute;
   top: 295px;
   font-size: 17px;
