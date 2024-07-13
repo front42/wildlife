@@ -12,6 +12,11 @@
 body {
   font-family: 'Open Sans', Arial, Helvetica, sans-serif;
   color: #F7F7F7;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none;
 }
 
@@ -540,12 +545,12 @@ footer {
     position: absolute;
     top: 82px;
     left: 104px;
-    z-index: -1;
-    opacity: 0;
     flex-direction: column;
     justify-content: space-between;
     height: 194px;
-    transition: .6s;
+    opacity: 0;
+    pointer-events: none;
+    transition: .7s;
   }
 
   .menu a {
@@ -553,8 +558,8 @@ footer {
   }
 
   .menu.active {
-    z-index: 1;
     opacity: 1;
+    pointer-events: auto;
   }
 
   .burger {

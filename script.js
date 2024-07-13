@@ -2,7 +2,7 @@ const slides = document.querySelector('.slides');
 const arrowLeft = document.querySelector('.arrow-left');
 const arrowRight = document.querySelector('.arrow-right');
 
-const moveLeft = () => {
+const showRight = () => {
   arrowLeft.disabled = true;
   slides.firstElementChild.classList.add('thinner');
   setTimeout(() => {
@@ -12,7 +12,7 @@ const moveLeft = () => {
   }, 700);
 };
 
-const moveRight = () => {
+const showLeft = () => {
   arrowRight.disabled = true;
   slides.lastElementChild.classList.add('thinner');
   slides.prepend(slides.lastElementChild);
@@ -20,8 +20,8 @@ const moveRight = () => {
   setTimeout(() => arrowRight.disabled = false, 700);
 };
 
-arrowLeft.addEventListener('click', moveLeft);
-arrowRight.addEventListener('click', moveRight);
+arrowLeft.addEventListener('click', showLeft);
+arrowRight.addEventListener('click', showRight);
 
 const menu = document.querySelector('.menu');
 const burger = document.querySelector('.burger');
