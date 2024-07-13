@@ -22,3 +22,16 @@ const moveRight = () => {
 
 arrowLeft.addEventListener('click', moveLeft);
 arrowRight.addEventListener('click', moveRight);
+
+const menu = document.querySelector('.menu');
+const burger = document.querySelector('.burger');
+
+menu.addEventListener('click', () => {
+  menu.classList.remove('active');
+  burger.classList.remove('active');
+});
+
+burger.addEventListener('click', () => {
+  menu.classList.toggle('active');
+  burger.classList.toggle('active');
+});
