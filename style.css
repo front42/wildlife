@@ -399,7 +399,6 @@ footer {
 
   .slider-window {
     max-width: 662px;
-    /* border: 2px solid red; */
   }
 
   .footer-links a {
@@ -440,7 +439,7 @@ footer {
   }
 
   .notify h3 {
-    margin-top: 122px;
+    margin-top: 120px;
   }
 
   .address {
@@ -604,7 +603,6 @@ footer {
   }
 
   .burger.active span {
-    color: red;
     transform: rotate(45deg);
   }
 
@@ -659,19 +657,23 @@ footer {
 
 @media screen and (max-width: 394px) {
   section {
-    height: 980px;
+    height: 950px;
   }
 
   .articles h2 {
-    margin: 60px 0 0;
+    margin: 50px 0 0;
     word-spacing: -.3px;
     letter-spacing: -.3px;
   }
 
   .articles p {
-    margin: 0 0 70px;
+    margin: 0 0 64px;
     word-spacing: -.5px;
     letter-spacing: -.5px;
+  }
+
+  input {
+    margin-top: 55px;
   }
 
   .address {

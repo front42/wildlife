@@ -27,11 +27,13 @@ const burger = document.querySelector('.burger');
 const menu = document.querySelector('.menu');
 
 burger.addEventListener('click', () => {
-  menu.classList.toggle('active');
   burger.classList.toggle('active');
+  menu.classList.toggle('active');
 });
 
-menu.addEventListener('click', () => {
-  menu.classList.remove('active');
-  burger.classList.remove('active');
-});
+menu.querySelectorAll('li').forEach(li =>
+  li.addEventListener('click', () => {
+    burger.classList.remove('active');
+    menu.classList.remove('active');
+  })
+);
