@@ -1,3 +1,5 @@
+'use strict';
+
 const slides = document.querySelector('.slides');
 const arrowLeft = document.querySelector('.arrow-left');
 const arrowRight = document.querySelector('.arrow-right');
@@ -37,3 +39,8 @@ menu.querySelectorAll('li').forEach(li =>
     menu.classList.remove('active');
   })
 );
+
+document.addEventListener('scroll', () => {
+  burger.classList.remove('active');
+  menu.classList.remove('active');
+});
