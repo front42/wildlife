@@ -68,7 +68,8 @@ header {
 }
 
 .logo:hover, .footer-logo:hover {
-  filter: invert(.5) sepia(1) saturate(55) hue-rotate(25deg);
+  /* filter: invert(.5) sepia(1) saturate(55) hue-rotate(25deg); */
+  color: #CD6326;
 }
 
 h1 {
