@@ -9,7 +9,7 @@ const showLeft = () => {
   slides.lastElementChild.classList.add('thinner');
   slides.prepend(slides.lastElementChild);
   setTimeout(() => slides.firstElementChild.classList.remove('thinner'));
-  setTimeout(() => arrowLeft.disabled = false, 700);
+  setTimeout(() => (arrowLeft.disabled = false), 700);
 };
 
 const showRight = () => {
@@ -33,11 +33,11 @@ burger.addEventListener('click', () => {
   menu.classList.toggle('active');
 });
 
-menu.querySelectorAll('li').forEach(li =>
+menu.querySelectorAll('li').forEach((li) =>
   li.addEventListener('click', () => {
     burger.classList.remove('active');
     menu.classList.remove('active');
-  })
+  }),
 );
 
 document.addEventListener('scroll', () => {
